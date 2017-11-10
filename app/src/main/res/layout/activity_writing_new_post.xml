@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.myapplication.Activity.WritingNewPostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/barimage"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/missing_image_content"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/postingtitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/postingBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="#00000000"
+                    android:contentDescription="@string/missing_image_content"
+                    android:cropToPadding="false"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/postingbackicon" />
+
+                <ImageButton
+                    android:id="@+id/postingFinish"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="#00000000"
+                    android:contentDescription="@string/missing_image_content"
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/postingfinishicon" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/postingPicture"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/missing_image_content"
+                app:srcCompat="@drawable/defaultpicture" />
+
+            <TextView
+                android:id="@+id/postingMusicText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="음악" />
+
+            <TextView
+                android:id="@+id/postingLocationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="장소" />
+
+            <EditText
+                android:id="@+id/postingOpinionText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="top"
+                android:hint="내용을 작성하세요" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/postingPictureButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/missing_image_content"
+                    app:srcCompat="@drawable/postingpictureicon" />
+
+                <ImageButton
+                    android:id="@+id/postingMusicButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/missing_image_content"
+                    app:srcCompat="@drawable/postingmusicicon" />
+
+                <ImageButton
+                    android:id="@+id/postingLocationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/missing_image_content"
+                    app:srcCompat="@drawable/postinglocationicon" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
